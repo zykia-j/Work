@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zykia Godbolt-Jones - Resume</title>
+  <link rel="stylesheet" href="styles.css">
+<script src = "scriptCV.js" defer></script>
+</head>
+<body>
+  <div class="container">
+  <header class="header-flex"> 
+    <img src="thumbnail.jpg" alt="Profile Picture" class="profile-pic">
+  <div class="name-center">
+    <h1>Zykia Godbolt-Jones</h1>
+  </div>
+
+  <div class="contact-info">
+    <p>Email: <a href="mailto:zykia1270@yahoo.com">zykia1270@yahoo.com</a></p>
+    <p>Phone: (410) 422-9277</p>
+  </div>
+</header>
+
+
+    <section>
+      <h2>Summary</h2>
+      <p>Aspiring software engineer with a strong foundation in coding, testing, and debugging. Looking forward to challenging roles where I can leverage my passion for problem solving.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Springboard</strong> - Software Engineering Career Track (2025)</li>
+        <li><strong>CourseCareers</strong> - Software Development Certification (2024 - 2025)</li>
+        <li><strong>Wicomico High School</strong> - High School Diploma (2010 - 2014)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Technologies</h2>
+      <h3>Web Development</h3>
+      <p>HTML, CSS, JavaScript, jQuery, Node.js, React</p>
+
+      <h3>Databases</h3>
+      <p>SQL, PostgreSQL, SQLAlchemy</p>
+
+      <h3>Testing</h3>
+      <p>Unit testing with TDD/BDD</p>
+
+      <h3>Other</h3>
+      <p>AI Prompt Engineering, Command Line, Git & GitHub, Object-Oriented Programming, Algorithms</p>
+    </section>
+
+     <section>
+  <h2>Projects</h2>
+  <div class="scroll-box">    
+  <table>
+    <thead>
+      <tr>
+        <th>Project Name</th>
+        <th>Technologies Used</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Portfolio Website</td>
+        <td>HTML, CSS, JavaScript</td>
+        <td>Built a personal portfolio site to showcase projects and skills.</td>
+      </tr>
+      <tr>
+        <td>Meme Generator</td>
+        <td>HTML, CSS, JavaScript</td>
+        <td>Created a web app that generates random memes using an external API.</td>
+      </tr>
+    
+      <tr>
+        <td>Jeopardy Game</td>
+        <td>HTML, CSS, JavaScript</td>
+        <td>Developed a web-based Jeopardy game that allows users to play and test their knowledge on various topics.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+<section>
+  <h2>Contact Me</h2>
+   <form id ="contactForm" action = "#" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required/><br/>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required /><br /><br />
+
+    <label for="phone">Phone Number:</label><br />
+    <input type="tel" id="phone" name="phone" /><br /><br />
+
+    <label for="organization">Organization:</label><br />
+    <input type="text" id="organization" name="organization" /><br /><br />
+
+    <label for="role">Role:</label><br />
+    <input type="text" id="role" name="role" /><br /><br />
+
+    <label for="reason">Reason for Contact:</label><br />
+    <select id="reason" name="reason">
+      <option value="job">Job Offer</option>
+      <option value="collab">Collaboration</option>
+      <option value="feedback">Feedback</option>
+      <option value="other">Other</option>
+    </select><br /><br />
+
+   <label>Preferred Contact Method:</label>
+<div class="radio-group">
+  <label><input type="radio" name="contactMethod" value="Email" checked /> Email</label>
+  <label><input type="radio" name="contactMethod" value="Phone" /> Phone</label>
+</div>
+
+
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message" rows="5" cols="40" required></textarea><br /><br />
+
+    <button type="submit">Submit</button>
+    <p id="formStatus" aria-live="polite"></p>
+  </form>
+</section>
+  </div>
+  <footer style="text-align: center; font-size: 0.8rem; margin-top: 2rem;">
+  <p>Design inspiration from <a href="https://www.springboard.com" target="_blank">Springboard</a> Foundations curriculum. Styled with help from StackOverflow.</p>
+</footer>
+
+</body>
+</html>

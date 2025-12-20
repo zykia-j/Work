@@ -1,0 +1,243 @@
+/* Box model applied globally */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid #ccc;
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+
+/* === Container Styling === */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #ffffff; /* White content background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 10px;
+}
+
+/* Flexbox layout for header */
+/*Aligns header elements horizontally and vertically*/
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+/* Profile image */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #2c3e50;
+  object-fit: cover;
+}
+
+/* Center name */
+.name-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* Right-aligned contact info */
+.contact-info {
+  text-align: right;
+  font-size: 0.9em;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 0.2rem 0;
+}
+
+header p {
+  font-size: 1rem;
+  color: #34495e;
+}
+
+/* === Links === */
+a {
+  text-decoration: none; /* Remove default underline */
+  color: #2980b9; /* Cool blue */
+}
+
+a:hover {
+  color: #1abc9c; /* Teal hover effect */
+}
+
+/* === Section Headings === */
+section h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #1abc9c;
+  padding-bottom: 0.4rem;
+  margin-top: 2rem;
+}
+
+/* === Technologies Lists === */
+section h3 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: #34495e;
+}
+
+/* === Lists === */
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* === Table Styling for Projects === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+th {
+  background-color: #ecf0f1;
+  font-weight: bold;
+}
+
+td {
+  background-color: #fafafa;
+}
+
+/* Flex layout for form */
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  outline: none;
+  width: 100%;
+}
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border: black 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #1a242f;
+}
+/* === Responsive Typography === */
+/* Adjusts headings on smaller screens */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+  
+}
+/* === Radio Button Alignment Fix === */
+input[type="radio"] {
+  margin-right: 6px;  /* Moves the button closer to the label text */ ;
+  vertical-align: middle;
+}
+
+label {
+  margin-right: 0px; /* Adds space between Email and Phone options */
+  display: flex;
+  align-items: center; 
+}
+
+/* Group radio buttons on one line */
+.radio-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 5px;
+}
+@media (max-width: 480px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
+/* Fade-in animation for sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeInUp 0.8s ease-out;
+}
+/* === Scrollable Box === */
+.scroll-box {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* Optional: show a scrollbar always */
+.scroll-box::-webkit-scrollbar {
+  height: 8px;
+}
+.scroll-box::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
